@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cerberix.Utility.HealthCheck.Core", "Cerberix.Utility.HealthCheck.Core\Cerberix.Utility.HealthCheck.Core.csproj", "{D5C84019-6659-4C04-89F6-91953D66D7B1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cerberix.Utility.HealthCheck.SqlConnection", "Cerberix.Utility.HealthCheck.SqlConnection\Cerberix.Utility.HealthCheck.SqlConnection.csproj", "{65CE31C4-8539-4D99-8851-1208A9282CA9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cerberix.Utility.HealthCheck.HttpEndpoint", "Cerberix.Utility.HealthCheck.HttpEndpoint\Cerberix.Utility.HealthCheck.HttpEndpoint.csproj", "{4FD12F45-3B42-4901-B1BA-0FF9DC98AD63}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cerberix.Utility.HealthCheck.RedisConnection", "Cerberix.Utility.HealthCheck.RedisConnection\Cerberix.Utility.HealthCheck.RedisConnection.csproj", "{CD040981-7790-4BF5-9698-B0BF33D20DC1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D5C84019-6659-4C04-89F6-91953D66D7B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5C84019-6659-4C04-89F6-91953D66D7B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5C84019-6659-4C04-89F6-91953D66D7B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5C84019-6659-4C04-89F6-91953D66D7B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65CE31C4-8539-4D99-8851-1208A9282CA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65CE31C4-8539-4D99-8851-1208A9282CA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65CE31C4-8539-4D99-8851-1208A9282CA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65CE31C4-8539-4D99-8851-1208A9282CA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FD12F45-3B42-4901-B1BA-0FF9DC98AD63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FD12F45-3B42-4901-B1BA-0FF9DC98AD63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FD12F45-3B42-4901-B1BA-0FF9DC98AD63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FD12F45-3B42-4901-B1BA-0FF9DC98AD63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD040981-7790-4BF5-9698-B0BF33D20DC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD040981-7790-4BF5-9698-B0BF33D20DC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD040981-7790-4BF5-9698-B0BF33D20DC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD040981-7790-4BF5-9698-B0BF33D20DC1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D27DF7BA-DDE5-4E6A-A57F-E61F7B1C4D6D}
+	EndGlobalSection
+EndGlobal

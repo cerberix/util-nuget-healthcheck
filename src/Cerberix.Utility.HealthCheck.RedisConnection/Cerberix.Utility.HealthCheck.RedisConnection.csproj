@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RuntimeIdentifiers>win7-x64</RuntimeIdentifiers>
+    <Authors>pacjman</Authors>
+    <Company>cerberix-net</Company>
+    <Description>A health check module for dot net standard</Description>
+    <PackageLicense>https://github.com/cerberix-net/util-healthcheck-nuget/blob/master/LICENSE</PackageLicense>
+    <RepositoryUrl>https://github.com/cerberix-net/util-healthcheck-nuget/</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <Version>1.0.0-pre00</Version>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageLicenseUrl>https://github.com/cerberix-net/util-healthcheck-nuget/blob/master/LICENSE</PackageLicenseUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Cerberix.Utility.HealthCheck.Core" Version="1.0.0-pre02" />
+    <PackageReference Include="StackExchange.Redis" Version="2.0.519" />
+  </ItemGroup>
+
+</Project>

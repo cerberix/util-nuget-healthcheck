@@ -1,29 +1,27 @@
 ﻿using System;
 using System.Threading.Tasks;
 using StackExchange.Redis;
+using Cerberix.HealthCheck.Core;
 
-namespace Cerberix.Utility.HealthCheck
+namespace Cerberix.HealthCheck.RedisConnection
 {
     public class RedisConnectionHealthCheck : IHealthCheck
 	{
         private static Lazy<ConnectionMultiplexer> _connection;
 
-        private readonly string _name;
 		private readonly string _description;
 
 		public RedisConnectionHealthCheck(
-			string name,
 			string description,
             string connectionString,
-            int connectionTimeout
+            int connectTimeout,
+            int connectRetry
 			)
 		{
-			_name = name;
 			_description = description;
 
             {
-                var options = ConfigurationOptions.Parse(connectionString);
-                options.ConnectTimeout = connectionTimeout;
+                var options = GetConfigurationOptions(connectionString, connectTimeout, connectRetry);
 
                 _connection = new Lazy<ConnectionMultiplexer>(() => ConnectionMultiplexer.Connect(options));
             }
@@ -47,7 +45,22 @@ namespace Cerberix.Utility.HealthCheck
                 error = exception.Message;
             }
 
-            return new HealthCheckResult(_name, _description, error, status);
+            return new HealthCheckResult(nameof(RedisConnectionHealthCheck), _description, error, status.ToString());
 		}
+
+        private static ConfigurationOptions GetConfigurationOptions(string connectionString, int connectTimeout, int connectRetry)
+        {
+            var options = ConfigurationOptions.Parse(connectionString);
+
+            options.ConnectTimeout = 1000 * connectTimeout; //  convert seconds => milliseconds
+            options.ConnectRetry = connectTimeout;
+
+            if (options.AbortOnConnectFail)
+            {
+                options.AbortOnConnectFail = false;
+            }
+            
+            return options;
+        }
 	}
 }

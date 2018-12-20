@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace Cerberix.Utility.HealthCheck
+namespace Cerberix.HealthCheck.Core
 {
     public interface IHealthCheck
 	{

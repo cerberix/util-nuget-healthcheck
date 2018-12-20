@@ -1,27 +1,25 @@
 ﻿using System;
 using System.Net.Http;
 using System.Threading.Tasks;
+using Cerberix.HealthCheck.Core;
 
-namespace Cerberix.Utility.HealthCheck
+namespace Cerberix.HealthCheck.HttpEndpoint
 {
-	internal class HttpGetEndpointHealthCheck : IHealthCheck
+	public class HttpGetEndpointHealthCheck : IHealthCheck
 	{
-		private readonly string _name;
 		private readonly string _description;
         private readonly string _endpoint;
-        private readonly TimeSpan _timeout;
+        private readonly TimeSpan _connectTimout;
 
         public HttpGetEndpointHealthCheck(
-			string name,
 			string description,
             string endpoint,
-            int timeout
+            int connectTimeout
             )
         {
-			_name = name;
 			_description = description;
             _endpoint = endpoint;
-            _timeout = new TimeSpan(days: 0, hours: 0, minutes: 0, seconds: timeout, milliseconds: 0);
+            _connectTimout = new TimeSpan(days: 0, hours: 0, minutes: 0, seconds: connectTimeout, milliseconds: 0);
 		}
 
         public async Task<HealthCheckResult> Run()
@@ -33,7 +31,7 @@ namespace Cerberix.Utility.HealthCheck
             {
                 bool hasResult = false;
 
-                using (var client = new HttpClient() { Timeout = _timeout })
+                using (var client = new HttpClient() { Timeout = _connectTimout })
                 {
                     var response = await client.GetAsync(_endpoint, HttpCompletionOption.ResponseHeadersRead);
 
@@ -49,7 +47,7 @@ namespace Cerberix.Utility.HealthCheck
                 error = exception.Message;
             }
 
-            return new HealthCheckResult(_name, _description, error, status);
+            return new HealthCheckResult(nameof(HttpGetEndpointHealthCheck), _description, error, status.ToString());
         }
     }
 }

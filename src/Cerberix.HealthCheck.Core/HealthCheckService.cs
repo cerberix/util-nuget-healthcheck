@@ -1,7 +1,7 @@
 ﻿using System.Linq;
 using System.Threading.Tasks;
 
-namespace Cerberix.Utility.HealthCheck
+namespace Cerberix.HealthCheck.Core
 {
 	public class HealthCheckService
 	{

@@ -1,23 +1,23 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <RuntimeIdentifiers>win7-x64</RuntimeIdentifiers>
-    <Authors>pacjman</Authors>
-    <Company>cerberix-net</Company>
-    <Description>A health check module for dot net standard</Description>
+    <Authors>pacjman@cerberix.net</Authors>
+    <Company>cerberix.net</Company>
+    <Description>core health check module for dot net standard</Description>
     <PackageLicense>https://github.com/cerberix-net/util-healthcheck-nuget/blob/master/LICENSE</PackageLicense>
     <RepositoryUrl>https://github.com/cerberix-net/util-healthcheck-nuget/</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <Version>1.0.0-pre00</Version>
+    <Version>1.0.0</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageLicenseUrl>https://github.com/cerberix-net/util-healthcheck-nuget/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/cerberix-net/util-nuget-healthcheck/master/img/cerberix.png</PackageIconUrl>
+    <PackageId>Cerberix.HealthCheck.Core</PackageId>
+    <Product>Cerberix.HealthCheck.Core</Product>
+    <PackageReleaseNotes>Initial Release</PackageReleaseNotes>
   </PropertyGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Cerberix.Utility.HealthCheck.Core" Version="1.0.0-pre02" />
-  </ItemGroup>
 
 </Project>

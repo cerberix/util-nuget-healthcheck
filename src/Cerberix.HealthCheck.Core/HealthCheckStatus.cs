@@ -1,4 +1,4 @@
-﻿namespace Cerberix.Utility.HealthCheck
+﻿namespace Cerberix.HealthCheck.Core
 {
     public enum HealthCheckStatus
     {

@@ -1,11 +1,11 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <RuntimeIdentifiers>win7-x64</RuntimeIdentifiers>
-    <Authors>pacjman</Authors>
+    <Authors>pacjman@cerberix.net</Authors>
     <Company>cerberix-net</Company>
-    <Description>A health check module for dot net standard</Description>
+    <Description>sql connection health check module for dot net standard</Description>
     <PackageLicense>https://github.com/cerberix-net/util-healthcheck-nuget/blob/master/LICENSE</PackageLicense>
     <RepositoryUrl>https://github.com/cerberix-net/util-healthcheck-nuget/</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
@@ -14,6 +14,13 @@
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageLicenseUrl>https://github.com/cerberix-net/util-healthcheck-nuget/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageReleaseNotes>Initial Release</PackageReleaseNotes>
+    <PackageIconUrl>https://raw.githubusercontent.com/cerberix-net/util-nuget-healthcheck/master/img/cerberix.png</PackageIconUrl>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Cerberix.HealthCheck.Core" Version="1.0.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.6.0" />
+  </ItemGroup>
 
 </Project>

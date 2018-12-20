@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cerberix.Utility.HealthCheck.Core", "Cerberix.Utility.HealthCheck.Core\Cerberix.Utility.HealthCheck.Core.csproj", "{D5C84019-6659-4C04-89F6-91953D66D7B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cerberix.HealthCheck.Core", "Cerberix.HealthCheck.Core\Cerberix.HealthCheck.Core.csproj", "{D5C84019-6659-4C04-89F6-91953D66D7B1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cerberix.Utility.HealthCheck.SqlConnection", "Cerberix.Utility.HealthCheck.SqlConnection\Cerberix.Utility.HealthCheck.SqlConnection.csproj", "{65CE31C4-8539-4D99-8851-1208A9282CA9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cerberix.HealthCheck.SqlConnection", "Cerberix.HealthCheck.SqlConnection\Cerberix.HealthCheck.SqlConnection.csproj", "{65CE31C4-8539-4D99-8851-1208A9282CA9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cerberix.Utility.HealthCheck.HttpEndpoint", "Cerberix.Utility.HealthCheck.HttpEndpoint\Cerberix.Utility.HealthCheck.HttpEndpoint.csproj", "{4FD12F45-3B42-4901-B1BA-0FF9DC98AD63}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cerberix.HealthCheck.HttpEndpoint", "Cerberix.HealthCheck.HttpEndpoint\Cerberix.HealthCheck.HttpEndpoint.csproj", "{4FD12F45-3B42-4901-B1BA-0FF9DC98AD63}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cerberix.Utility.HealthCheck.RedisConnection", "Cerberix.Utility.HealthCheck.RedisConnection\Cerberix.Utility.HealthCheck.RedisConnection.csproj", "{CD040981-7790-4BF5-9698-B0BF33D20DC1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cerberix.HealthCheck.RedisConnection", "Cerberix.HealthCheck.RedisConnection\Cerberix.HealthCheck.RedisConnection.csproj", "{CD040981-7790-4BF5-9698-B0BF33D20DC1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cerberix.HealthCheck.MySqlConnection", "Cerberix.HealthCheck.MySqlConnection\Cerberix.HealthCheck.MySqlConnection.csproj", "{A2C6ADE2-2261-4809-8FD3-928E3785B752}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{CD040981-7790-4BF5-9698-B0BF33D20DC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CD040981-7790-4BF5-9698-B0BF33D20DC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CD040981-7790-4BF5-9698-B0BF33D20DC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2C6ADE2-2261-4809-8FD3-928E3785B752}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2C6ADE2-2261-4809-8FD3-928E3785B752}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2C6ADE2-2261-4809-8FD3-928E3785B752}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2C6ADE2-2261-4809-8FD3-928E3785B752}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

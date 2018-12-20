@@ -1,27 +1,24 @@
 ﻿using System;
 using System.Threading.Tasks;
-using System.Data.SqlClient;
+using Cerberix.HealthCheck.Core;
 
-namespace Cerberix.Utility.HealthCheck
+namespace Cerberix.HealthCheck.SqlConnection
 {
 	public class SqlConnectionHealthCheck : IHealthCheck
 	{
-		private readonly string _name;
 		private readonly string _description;
         private readonly string _connectionString;
-        private readonly int _connectionTimeout;
+        private readonly int _connectTimeout;
 
 		public SqlConnectionHealthCheck(
-			string name,
 			string description,
             string connectionString,
-            int connectionTimeout
+            int connectTimeout
 			)
 		{
-			_name = name;
 			_description = description;
             _connectionString = connectionString;
-            _connectionTimeout = connectionTimeout;
+            _connectTimeout = connectTimeout;
 		}
 
 		public async Task<HealthCheckResult> Run()
@@ -33,14 +30,14 @@ namespace Cerberix.Utility.HealthCheck
 			{
                 bool hasResult = false;
 
-                using (var conn = new SqlConnection())
+                using (var conn = new System.Data.SqlClient.SqlConnection(_connectionString))
                 {
-                    using (var cmd = new SqlCommand())
+                    using (var cmd = new System.Data.SqlClient.SqlCommand())
                     {
                         cmd.Connection = conn;
                         cmd.CommandText = "SELECT SYSDATETIME();";
                         cmd.CommandType = System.Data.CommandType.Text;
-                        cmd.CommandTimeout = _connectionTimeout;
+                        cmd.CommandTimeout = _connectTimeout;
 
                         await conn.OpenAsync();
 
@@ -63,7 +60,7 @@ namespace Cerberix.Utility.HealthCheck
                 error = exception.Message;               
             }
 
-            return new HealthCheckResult(_name, _description, error, status);
+            return new HealthCheckResult(nameof(SqlConnectionHealthCheck), _description, error, status.ToString());
 		}
 	}
 }

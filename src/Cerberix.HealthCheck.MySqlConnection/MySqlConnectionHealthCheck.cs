@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Threading.Tasks;
-using Cerberix.HealthCheck.Core;
 
 namespace Cerberix.HealthCheck.MySqlConnection
 {

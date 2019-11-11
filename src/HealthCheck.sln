@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cerberix.HealthCheck.Core", "Cerberix.HealthCheck.Core\Cerberix.HealthCheck.Core.csproj", "{D5C84019-6659-4C04-89F6-91953D66D7B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cerberix.HealthCheck", "Cerberix.HealthCheck\Cerberix.HealthCheck.csproj", "{D5C84019-6659-4C04-89F6-91953D66D7B1}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cerberix.HealthCheck.SqlConnection", "Cerberix.HealthCheck.SqlConnection\Cerberix.HealthCheck.SqlConnection.csproj", "{65CE31C4-8539-4D99-8851-1208A9282CA9}"
 EndProject

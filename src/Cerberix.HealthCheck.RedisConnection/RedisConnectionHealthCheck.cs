@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
 using StackExchange.Redis;
-using Cerberix.HealthCheck.Core;
 
 namespace Cerberix.HealthCheck.RedisConnection
 {

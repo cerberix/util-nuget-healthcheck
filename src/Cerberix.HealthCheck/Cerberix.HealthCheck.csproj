@@ -17,7 +17,7 @@
     <PackageIconUrl>https://raw.githubusercontent.com/cerberix/util-nuget-healthcheck/main/img/cerberix.png</PackageIconUrl>
     <PackageId>Cerberix.HealthCheck</PackageId>
     <Product>Cerberix.HealthCheck</Product>
-    <PackageReleaseNotes>Initial Release</PackageReleaseNotes>
+    <PackageReleaseNotes>Minor - Fix Package Listing Urls</PackageReleaseNotes>
   </PropertyGroup>
 
 </Project>

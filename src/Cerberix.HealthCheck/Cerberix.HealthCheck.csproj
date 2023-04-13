@@ -6,18 +6,18 @@
     <Authors>hai@cerberix.net</Authors>
     <Company>cerberix.net</Company>
     <Description>core health check module for dot net standard</Description>
-    <PackageLicense>https://github.com/cerberix-net/util-nuget-healthcheck/blob/master/LICENSE</PackageLicense>
-    <RepositoryUrl>https://github.com/cerberix-net/util-nuget-healthcheck/</RepositoryUrl>
+    <PackageLicense>https://github.com/cerberix/util-nuget-healthcheck/blob/main/LICENSE</PackageLicense>
+    <RepositoryUrl>https://github.com/cerberix/util-nuget-healthcheck/</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <Version>1.1.0</Version>
+    <Version>1.1.1</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <PackageLicenseUrl>https://github.com/cerberix-net/util-nuget=healthcheck/blob/master/LICENSE</PackageLicenseUrl>
-    <PackageIconUrl>https://raw.githubusercontent.com/cerberix-net/util-healthcheck-nuget/master/img/cerberix.png</PackageIconUrl>
+    <PackageLicenseUrl>https://github.com/cerberix/util-nuget-healthcheck/blob/main/LICENSE</PackageLicenseUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/cerberix/util-nuget-healthcheck/main/img/cerberix.png</PackageIconUrl>
     <PackageId>Cerberix.HealthCheck</PackageId>
     <Product>Cerberix.HealthCheck</Product>
-    <PackageReleaseNotes>Initial Release</PackageReleaseNotes>
+    <PackageReleaseNotes>Minor - Fix Package Listing Urls</PackageReleaseNotes>
   </PropertyGroup>
 
 </Project>

@@ -4,18 +4,18 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <RuntimeIdentifiers>win7-x64</RuntimeIdentifiers>
     <Authors>hai@cerberix.net</Authors>
-    <Company>cerberix-net</Company>
+    <Company>cerberix</Company>
     <Description>mysql connection health check module for dot net standard</Description>
-    <PackageLicense>https://github.com/cerberix-net/util-healthcheck-nuget/blob/master/LICENSE</PackageLicense>
-    <RepositoryUrl>https://github.com/cerberix-net/util-healthcheck-nuget/</RepositoryUrl>
+    <PackageLicense>https://github.com/cerberix/util-nuget-healthcheck/blob/main/LICENSE</PackageLicense>
+    <RepositoryUrl>https://github.com/cerberix/util-nuget-healthcheck/</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <Version>1.1.0</Version>
+    <Version>1.1.1</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <PackageLicenseUrl>https://github.com/cerberix-net/util-healthcheck-nuget/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageLicenseUrl>https://github.com/cerberix/util-nuget-healthcheck/blob/main/LICENSE</PackageLicenseUrl>
     <PackageReleaseNotes>Initial Release</PackageReleaseNotes>
-    <PackageIconUrl>https://raw.githubusercontent.com/cerberix-net/util-nuget-healthcheck/master/img/cerberix.png</PackageIconUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/cerberix/util-nuget-healthcheck/main/img/cerberix.png</PackageIconUrl>
   </PropertyGroup>
 
   <ItemGroup>

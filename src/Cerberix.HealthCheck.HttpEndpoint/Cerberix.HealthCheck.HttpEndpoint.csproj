@@ -2,24 +2,29 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <RuntimeIdentifiers>win7-x64</RuntimeIdentifiers>
-    <Authors>hai@cerberix.net</Authors>
+    <Authors>jarom@cerberix.net</Authors>
     <Company>cerberix</Company>
     <Description>http endpoint health check module for dot net standard</Description>
-    <PackageLicense>https://github.com/cerberix/util-nuget-healthcheck/blob/main/LICENSE</PackageLicense>
     <RepositoryUrl>https://github.com/cerberix/util-nuget-healthcheck/</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <Version>1.1.1</Version>
+    <Version>1.2.0</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <PackageLicense>https://github.com/cerberix/util-nuget-healthcheck/blob/main/LICENSE</PackageLicense>
-    <PackageReleaseNotes>Minor - Fix Package Listing Urls</PackageReleaseNotes>
-    <PackageIcon>https://raw.githubusercontent.com/cerberix/util-nuget-healthcheck/main/img/cerberix.png</PackageIcon>
+    <PackageReleaseNotes>2024 - Initial Release</PackageReleaseNotes>
+    <PackageIcon>cerberix.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Cerberix.HealthCheck" Version="1.1.0" />
+    <!-- Ensure the LICENSE is included in the package --> 
+    <None Include="../../LICENSE" Pack="true" PackagePath="/"/>
+    <!-- Ensure the icon file is included in the package -->
+    <None Include="../../img/cerberix.png" Pack="true" PackagePath="\"/>
+    <!-- Include the README.md in the package -->
+    <None Include="../../README.md" Pack="true" PackagePath="\"/>
   </ItemGroup>
 
 </Project>

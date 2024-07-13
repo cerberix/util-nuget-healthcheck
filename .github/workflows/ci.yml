@@ -17,7 +17,7 @@ jobs:
       with:
         dotnet-version: '8.x' 
     - name: Restore dependencies
-      run: dotnet restore src/HealthCheck.sln --configfile NuGet.config
+      run: dotnet restore src/HealthCheck.sln
     - name: Build
       run: dotnet build --configuration Release src/HealthCheck.sln
     - name: Test

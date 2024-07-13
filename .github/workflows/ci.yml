@@ -19,6 +19,6 @@ jobs:
     - name: Pack
       run: dotnet pack --configuration Release --no-build src/HealthCheck.sln -o dist
     - name: Push
-      run: dotnet nuget push dist/*.nupkg --source https://nuget.pkg.github.com/cerberix/index.json --api-key ${GITHUB_TOKEN}
+      run: dotnet nuget push dist/*.nupkg --source https://nuget.pkg.github.com/cerberix/index.json --api-key ${GITHUB_TOKEN} --skip-duplicate
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -13,6 +13,7 @@
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageReleaseNotes>2024 - Initial Release</PackageReleaseNotes>
     <PackageIcon>cerberix.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
   </PropertyGroup>
 

@@ -13,9 +13,9 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <PackageLicenseUrl>https://github.com/cerberix/util-nuget-healthcheck/blob/main/LICENSE</PackageLicenseUrl>
+    <PackageLicense>https://github.com/cerberix/util-nuget-healthcheck/blob/main/LICENSE</PackageLicense>
     <PackageReleaseNotes>Minor - Fix Package Listing Urls</PackageReleaseNotes>
-    <PackageIconUrl>https://raw.githubusercontent.com/cerberix/util-nuget-healthcheck/main/img/cerberix.png</PackageIconUrl>
+    <PackageIcon>https://raw.githubusercontent.com/cerberix/util-nuget-healthcheck/main/img/cerberix.png</PackageIcon>
   </PropertyGroup>
 
   <ItemGroup>

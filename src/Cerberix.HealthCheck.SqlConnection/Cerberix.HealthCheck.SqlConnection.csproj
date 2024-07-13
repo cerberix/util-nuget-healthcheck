@@ -19,6 +19,8 @@
   <ItemGroup>
     <PackageReference Include="Cerberix.HealthCheck" Version="1.1.0" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
+    <!-- Ensure the LICENSE is included in the package --> 
+    <None Include="../../LICENSE" Pack="true" PackagePath="/"/>
     <!-- Ensure the icon file is included in the package -->
     <None Include="../../img/cerberix.png" Pack="true" PackagePath="\"/>
     <!-- Include the README.md in the package -->

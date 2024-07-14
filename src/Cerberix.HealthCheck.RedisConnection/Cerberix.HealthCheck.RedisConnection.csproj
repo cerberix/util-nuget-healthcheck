@@ -7,7 +7,7 @@
     <Description>redis connection health check module for dot net standard</Description>
     <RepositoryUrl>https://github.com/cerberix/util-nuget-healthcheck/</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <Version>1.2.0</Version>
+    <Version>1.2.1</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
@@ -19,7 +19,7 @@
 
   <ItemGroup>
     <PackageReference Include="Cerberix.HealthCheck" Version="1.2.0" />
-    <PackageReference Include="StackExchange.Redis" Version="2.0.519" />
+    <PackageReference Include="StackExchange.Redis" Version="2.8.0" />
     <!-- Ensure the LICENSE is included in the package --> 
     <None Include="../../LICENSE" Pack="true" PackagePath="/"/>
     <!-- Ensure the icon file is included in the package -->

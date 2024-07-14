@@ -18,7 +18,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Cerberix.HealthCheck" Version="1.1.0" />
+    <PackageReference Include="Cerberix.HealthCheck" Version="1.2.0" />
     <PackageReference Include="MySql.Data" Version="8.0.13" />
     <!-- Ensure the LICENSE is included in the package --> 
     <None Include="../../LICENSE" Pack="true" PackagePath="/"/>
